@@ -15,7 +15,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
+   background-color: rgba(182, 182, 182, 0.39);
     font-family: var(--fonte1);
     
 }
@@ -61,20 +61,29 @@ section {
 }
 
 section.normal {
-    background-color: white;
+    
     color: black;
 }
 
 section.imagem {
-    background-color: rgba(0, 0, 0, 0.61);
+    
     color: white;
-   
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.63);
+    background-attachment: fixed;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.imagem > p {
-    display: inline-block;
+    
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.733);
+    display: inline-block;
+    text-shadow: 1.5px 1.5px 0px black;
 }
 
 footer {
@@ -82,4 +91,15 @@ footer {
     text-align: center;
     color: white;
     padding: 10px;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
 }
